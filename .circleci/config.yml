@@ -12,9 +12,10 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ./hello.py test
+          command: ./manage.py test
           name: Test
-workflows:	
-  main:	
-    jobs:	
+
+workflows:
+  main:
+    jobs:
       - build-and-test
