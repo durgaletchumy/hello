@@ -14,9 +14,6 @@ jobs:
       - run:
           command: make install
           name: Install dependency
-      - run:
-          command: make lint
-          name: Test
 
 workflows:
   main:
