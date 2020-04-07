@@ -14,3 +14,7 @@ jobs:
       - run:
           command: ./hello.py test
           name: Test
+workflows:	
+  main:	
+    jobs:	
+      - build-and-test
