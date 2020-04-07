@@ -18,7 +18,9 @@ jobs:
             make install
           name: Install dependency
       - run:
-          command: make lint
+          command: |
+            - venv/bin/activate
+            make lint
           name: Test
 
 workflows:
