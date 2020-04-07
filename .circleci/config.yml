@@ -12,15 +12,10 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: |
-            python3 -m venv venv
-            - venv/bin/activate
-            make install
+          command: make install
           name: Install dependency
       - run:
-          command: |
-            - venv/bin/activate
-            make lint
+          command: make lint
           name: Test
 
 workflows:
